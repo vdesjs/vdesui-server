@@ -1,0 +1,15 @@
+{
+  "name": "vdesui-server",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "author": "china-bin",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^16.7.10",
+    "cross-env": "^7.0.3",
+    "typescript": "^4.4.2"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
