@@ -6,6 +6,6 @@
     "outDir": "./dist",   
   },
   "include": [
-    "src/**/*.ts", "node_modules/axios"
+    "src/**/*.ts", "node_modules/axios", "src/**/*.js"
   ]
 }

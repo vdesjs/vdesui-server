@@ -22,6 +22,9 @@ export class AuthController {
       js_code: this.ctx.query.code
     })
 
+    global.session_key = data.session_key
+    console.log(global)
+
     return data as any;
   }
 
@@ -40,6 +43,19 @@ export class AuthController {
 
   @Get("/checkEncryptedData")
   async checkEncryptedData() {
-    
+
+  }
+
+  @Get("/getPhoneInfo")
+  async getPhoneInfo() {
+    console.log("session_key", global.session_key)
+    const data = await wxserver.openapi.auth.getPhoneInfo({
+      appId: this.wxminiConfig.appId,
+      session_key: global.session_key,
+      encryptedData: this.ctx.query.encryptedData,
+      iv: this.ctx.query.iv
+    })
+
+    return data as any
   }
 }

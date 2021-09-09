@@ -2,4 +2,5 @@
 <view class="container">
 <button bindtap="code2Session">auth.code2Session</button>
 <button bindtap="getAccessToken">auth.getAccessToken</button>
+<button bindtap="getPhoneInfo">auth.getPhoneInfo</button>
 </view>

@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+  <button bindtap="code2Session">auth.code2Session</button>
+<button bindtap="getAccessToken">auth.getAccessToken</button>
+<button bindgetphonenumber="getPhoneInfo" open-type="getPhoneNumber">auth.getPhoneInfo</button>
+</view>
